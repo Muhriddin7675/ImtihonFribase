@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "132493965304",
+    "project_id": "shop-a7ad9",
+    "storage_bucket": "shop-a7ad9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:132493965304:android:713b1cb360411b45edc80d",
+        "android_client_info": {
+          "package_name": "com.example.examtask"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPh_K4cGLcGuQDUCjE1rxw8CqiMyJ6YWQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:132493965304:android:b44de25542e179d2edc80d",
+        "android_client_info": {
+          "package_name": "com.example.imtihonfribase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPh_K4cGLcGuQDUCjE1rxw8CqiMyJ6YWQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:132493965304:android:02854f0fee7768feedc80d",
+        "android_client_info": {
+          "package_name": "uz.gita"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPh_K4cGLcGuQDUCjE1rxw8CqiMyJ6YWQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:layout_marginHorizontal="6dp"
+    android:layout_marginVertical="4dp"
+    android:background="@drawable/item_bg">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/seacher_becraund"
+        android:backgroundTint="#fff"
+        android:padding="4dp"
+        android:src="@drawable/image_1"
+        app:layout_constraintBottom_toTopOf="@id/view_1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="1.6" />
+
+    <View
+        android:id="@+id/view_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/seacher_becraund"
+        android:backgroundTint="@color/Color_Azure"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        app:layout_constraintVertical_weight="1.1" />
+
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Yumshoq o'yinchoq Switch ,35 sm"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/productSolid"
+        app:layout_constraintStart_toStartOf="@id/view_1"
+        app:layout_constraintTop_toTopOf="@id/view_1" />
+
+    <TextView
+        android:id="@+id/productSolid"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="6dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:paddingStart="15dp"
+        android:text="5.0 (200 ta buyumrtma)"
+        android:textColor="#919191"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@id/text_sum_oy"
+        app:layout_constraintStart_toStartOf="@id/view_1"
+        app:layout_constraintTop_toBottomOf="@id/productName" />
+
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@drawable/ic_star"
+        app:layout_constraintBottom_toBottomOf="@id/productSolid"
+        app:layout_constraintStart_toStartOf="@id/productSolid"
+        app:layout_constraintTop_toTopOf="@id/productSolid" />
+
+    <TextView
+        android:id="@+id/text_sum_oy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/text_narx_beckraund"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="15 480 so'm/oyiga"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/text22"
+        app:layout_constraintStart_toStartOf="@id/view_1"
+        app:layout_constraintTop_toBottomOf="@id/productSolid" />
+
+    <TextView
+        android:id="@+id/text22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/text_strike"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="#919191"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@id/view_1"
+        app:layout_constraintTop_toBottomOf="@id/text_sum_oy" />
+
+    <TextView
+        android:id="@+id/productSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="129 000 so'm"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/view_1"
+        app:layout_constraintTop_toBottomOf="@id/text22" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/viewAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/viewAppBar"
+        app:layout_constraintEnd_toEndOf="@id/viewAppBar"
+        app:layout_constraintStart_toStartOf="@id/viewAppBar"
+        app:layout_constraintTop_toTopOf="@id/viewAppBar" />
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:padding="6dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintBottom_toBottomOf="@id/viewAppBar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/product_image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="64dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/seacher_becraund"
+        android:src="@drawable/image_1"
+        app:circularflow_defaultRadius="12dp"
+        app:layout_constraintBottom_toTopOf="@id/view_1"
+        app:layout_constraintCircleRadius="20dp"
+        app:layout_constraintTop_toBottomOf="@id/viewAppBar"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintVertical_weight="1.6" />
+
+    <View
+        android:id="@+id/view_1"
+        android:layout_width="match_parent"
+        android:layout_height="249dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="128dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/product_image" />
+
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Yumshoq o'yinchoq Switch ,35 sm"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/productSolid"
+        app:layout_constraintStart_toStartOf="@id/view_1"
+        app:layout_constraintTop_toTopOf="@id/view_1" />
+
+    <TextView
+        android:id="@+id/productSolid"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="6dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:paddingStart="15dp"
+        android:text="5.0 (200 ta buyumrtma)"
+        android:textColor="#919191"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@id/text_sum_oy"
+        app:layout_constraintStart_toStartOf="@id/view_1"
+        app:layout_constraintTop_toBottomOf="@id/productName" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@drawable/ic_star"
+        app:layout_constraintBottom_toBottomOf="@id/productSolid"
+        app:layout_constraintStart_toStartOf="@id/productSolid"
+        app:layout_constraintTop_toTopOf="@id/productSolid" />
+
+    <TextView
+        android:id="@+id/text_sum_oy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/text_narx_beckraund"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="15 480 so'm/oyiga"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/text22"
+        app:layout_constraintStart_toStartOf="@id/view_1"
+        app:layout_constraintTop_toBottomOf="@id/productSolid" />
+
+    <TextView
+        android:id="@+id/text22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/text_strike"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="#919191"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@id/view_1"
+        app:layout_constraintTop_toBottomOf="@id/text_sum_oy" />
+
+    <TextView
+        android:id="@+id/productSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="129 000 so'm"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/view_1"
+        app:layout_constraintTop_toBottomOf="@id/text22" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addToBasketCancel"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/bg_button"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/sotib_olindi"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addToBasket"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/bg_button"
+        android:backgroundTint="#172B18"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/sotib_olish"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
